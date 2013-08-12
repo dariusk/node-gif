@@ -9,6 +9,13 @@
 #include "palette.h"
 #include "quantize.h"
 
+#ifndef FALSE
+#define FALSE (0)
+#endif
+#ifndef TRUE
+#define TRUE (!FALSE)
+#endif
+
 static int
 find_color_index(ColorMapObject *color_map, int color_map_size, Color &color)
 {
