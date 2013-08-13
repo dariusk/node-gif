@@ -260,7 +260,7 @@ GifColorType ext_web_safe_palette[256] = {
     // text color
     { 0xff, 0xff, 0x00 },
 //transparency
-{0xff, 0xff, 0xfe}
+    { 0xff, 0xff, 0x01 },
 };
 
 int
