@@ -3,7 +3,7 @@
 
 #include <gif_lib.h>
 
-extern GifColorType ext_web_safe_palette[256];
+extern GifColorType ext_web_safe_palette[216];
 
 int find_closest_color(int r, int g, int b);
 
