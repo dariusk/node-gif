@@ -23,7 +23,7 @@ web_safe_quantize(int width, int height,
     typedef std::map<int, char> IdxCache;
     IdxCache cache;
 
-    for (int i = 0; i < height; i++) {
+/*    for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
             IdxCache::iterator idx = cache.find(*r<<16 | *g<<8 | *b);
             if (idx != cache.end()) {
@@ -36,7 +36,7 @@ web_safe_quantize(int width, int height,
             out++; r++; g++; b++;
         }
     }
-
+*/
     return GIF_OK;
 }
 
