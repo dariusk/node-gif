@@ -31,7 +31,7 @@ web_safe_quantize(int width, int height,
                 r++; g++; b++;
                 continue;
             }
-            *out = find_closest_color(255, 0, 0); // hidden for 255..0 loop!
+            *out = find_closest_color(*r, *g, *b); // hidden for 255..0 loop!
             cache[*r<<16 | *g<<8 | *b] = *out;
             out++; r++; g++; b++;
         }
